@@ -1,0 +1,178 @@
+body.dark {
+    background-color: #120037;
+}
+
+.dark .header {
+    height: 0.1%;
+    width: 100%;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    box-shadow: 0 1px 0 0 #110038;
+}
+
+.dark .logo {
+    /* text-indent: -9999px; */
+    width: 102.6px;
+    height: 64px;
+    background-image: url(../images/gifOF_logo_dark.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin: 35px 0px 19px 0px;
+}
+
+.dark .botonTema {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    background-color: #EE3EFE;
+    height: 28px;
+    color: #110038;
+}
+
+.dark .day {
+    display: flex;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    padding: 5px 5px 5px 10px;
+    margin: 10px;
+    width: 140px;
+}
+
+.dark .night {
+    display: flex;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    background: #2E32FB;
+    color: white;
+    border: 1px solid rgba(51,53,143,0.20);
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    padding: 5px 5px 5px 10px;
+    margin: 10px;
+    width: 140px;
+}
+
+.dark .botones {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    width: 127px;
+    height: 32px;   
+    /* margin-left: 48px;
+    line-height: 28px; */
+    float: right;
+    margin-right: 16px;
+    color: #110038;
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    line-height: 28px;
+}
+
+.dark .botones-special {
+    margin-right: 0;
+}
+
+.dark .dropdown {
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    float: right;
+    padding: 10px; 
+    /* margin-right: 16px; */
+    color: #110038;
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    text-decoration: none;
+    background-image: url(../images/forward.svg);
+    background-size: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dark .special-li {
+    background-color: #120037;
+    display: inline-flex;
+    float: right;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 7px;
+    margin-left: 16px;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+/* .menu li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+}
+
+.menu li a:active {
+    color: rgba(6,10,36,0.56);
+    text-decoration: line-through;
+} */
+
+.dark .buscarS {
+    width: 90%;
+    height: 99px;
+    /* margin-left: 100px; */
+    /* margin-right: 140px; */
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .buscarT {
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    width: 99.6%;
+    height: 24px;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    padding-left: 3px;
+}
+
+.dark .boton {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #B4B4B4;
+    background: #E6E6E6;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    width: 7.1%;
+    height: 36px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 18px;
+    /* text-align: center;
+    line-height: 28px; */
+}
+
+.dark .rectanguloS {
+    /* margin-left: 100px; */
+    margin-top: 64px;
+    padding: 5px;
+    width: 90%;
+    height: 32px;
+    background: #FFFAFE;
+    border: 1px solid #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+}
+
+.dark .textSugerencia {
+    margin: 2px;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    width: 98%;
+    height: 24px;
+    color: white;
+}
+
+.dark .underline {
+    display: flex;
+}
