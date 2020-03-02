@@ -28,6 +28,11 @@ body.dark {
     color: #110038;
 }
 
+.dark .botonTema:hover {	
+    /* outline: 1px dotted black; */
+    background: #CE36DB;	
+}
+
 .dark .day {
     display: flex;
     font-family: 'Chakra Petch', sans-serif;
@@ -73,6 +78,13 @@ body.dark {
     line-height: 28px;
 }
 
+.dark .botones:hover {	
+    outline: 1px dotted black;
+    background: #CE36DB;	
+    /* border: 1px solid #110038;	 */
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;	
+}
+
 .dark .botones-special {
     margin-right: 0;
 }
@@ -89,24 +101,51 @@ body.dark {
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
     text-decoration: none;
-    background-image: url(../images/forward.svg);
+    background-image: url(../images/dropdownDT.svg);
     background-size: 10px;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.dark .dropdown:hover {	
+    outline: 1px dotted black;
+    background: #CE36DB;	
+    text-decoration: none;	
+    background-image: url(../images/dropdownDT.svg);	
+    background-size: 10px;	
+    background-position: center;	
+    background-repeat: no-repeat;	
+}
+
 .dark .special-li {
+    width: 95px;	
+    height: 32px;
     background-color: #120037;
     display: inline-flex;
     float: right;
     font-size: 16px;
     color: #FFFFFF;
-    margin-top: 7px;
-    margin-left: 16px;
+    padding-top: 7px;
+    padding-left: 10px;
+    margin-left: 6px; 
     letter-spacing: 0;
     line-height: 18px;
     text-decoration: none;
 }
+
+.dark .special-li:hover {
+    border: 1px dashed #FFFFFF;
+}
+
+.dark .special-li:active {
+    border: none;
+    color: #8D7E9E;
+}	
+
+.dark .underline {
+    text-decoration: underline;
+}
+
 
 /* .menu li a:hover {
     color: #00F3BB;
@@ -125,6 +164,34 @@ body.dark {
     /* margin-right: 140px; */
     background: #B4B4B4;
     box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .buscarSClick {	
+    display: none;	
+    width: 90%;	
+    height: 160px;	
+    background: #B4B4B4;	
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;	
+    padding-top: 15px;	
+}
+
+.dark .buscarSClickTema {	
+    padding-left: 10px;	
+    margin-left: 15px;	
+    margin-bottom: 10px;	
+    width: 90%;	
+    height: 36px;	
+    background: #C6C6C6;	
+    border: 1px solid #808080;	
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;	
+    font-size: 16px;	
+    color: #110038;	
+    letter-spacing: 0;	
+    line-height: 22px;	
+    text-align: left;	
+}	
+.buscar:active .buscarSClick {	
+    display: block;	
 }
 
 .dark .buscarT {
@@ -154,6 +221,20 @@ body.dark {
     line-height: 28px; */
 }
 
+.dark .ejemplos {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    background: #3D33FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 18px;
+
+}
+
 .dark .rectanguloS {
     /* margin-left: 100px; */
     margin-top: 64px;
@@ -163,6 +244,38 @@ body.dark {
     background: #FFFAFE;
     border: 1px solid #2E32FB;
     box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+}
+
+.dark .titulo {	
+    position: relative;	
+    height: 24px;	
+    width: 99%;	
+    max-width: 264px;
+    left: 2px;	
+    top: 2px;	
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);	
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 4px;
+    padding-top: 2px;
+}	
+
+.dark .vermas {	
+    position: relative;	
+    bottom: 42px;	
+    left: 12px;	
+    width: 81px;	
+    height: 34px;	
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;	
+    color: white;	
+}
+
+.dark .misG {
+    margin-top: 0px;
 }
 
 .dark .textSugerencia {
@@ -175,4 +288,183 @@ body.dark {
 
 .dark .underline {
     display: flex;
+}
+
+.dark .crearGif {
+    width: 684px;
+    height: 386px;
+    /* display: grid; */
+    margin-left: 20%;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .botonCancelar {
+    padding: 6.5px 35px;
+    width: 144px;
+    height: 36px;
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    position: relative;
+    top: 316.5px;
+    right: 180px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.dark .botonComenzar {
+    width: 144px;
+    height: 36px;
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    position: relative;
+    top: 288px;
+    right: 40px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+.dark .gifsT {
+    display: none;
+    height: 25px;
+    width: 98.5%;
+    position: relative;
+    bottom: 28px;
+    left: 2px;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    font-size:14px;	
+    color: white;
+}
+
+.dark .crearGifCamara {	
+    /* display: none; */	
+    width: 860px;	
+    height: 548px;	
+    margin-left: 10%;	
+    background: #E6E6E6;	
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;	
+}	
+.dark .botonCamara {	
+    width: 36px;	
+    height: 36px;	
+    position: relative;	
+    top: 5.5px;	
+    left: 670px;	
+    background:rgb(238, 62, 254);	
+    border: 1px solid #110038;	
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;	
+    padding-top:5px;	
+}	
+.dark .botonCapturar {	
+    width: 144px;	
+    height: 36px;	
+    background: rgb(238, 62, 254);	
+    border: 1px solid #110038;	
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;	
+    position: relative;	
+    top: 2px;	
+    left: 665px;	
+    font-family: 'Chakra Petch', sans-serif;	
+    font-size: 16px;	
+    color: #110038;	
+    letter-spacing: 0;	
+    text-align: center;	
+    line-height: 18px;	
+}	
+.dark .botonRepetir {	
+    width: 144px;	
+    height: 36px;	
+    background: #FFF4FD;	
+    border: 1px solid #110038;	
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;	
+    position: relative;	
+    top: 2px;	
+    left: 430px;	
+    font-family: 'Chakra Petch', sans-serif;	
+    font-size: 16px;	
+    color: #110038;	
+    letter-spacing: 0;	
+    text-align: center;	
+    line-height: 18px;	
+}	
+.dark .botonSG {	
+    width: 144px;	
+    height: 36px;	
+    background:rgb(238, 62, 254);	
+    border: 1px solid #110038;	
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;	
+    position: relative;	
+    top: 2px;	
+    left: 430px;	
+    font-family: 'Chakra Petch', sans-serif;	
+    font-size: 16px;	
+    color: #110038;	
+    letter-spacing: 0;	
+    text-align: center;	
+    line-height: 18px;	
+}	
+.dark .SG {	
+    top: 5px;	
+    left: 705px;	
+}
+
+.dark .guifoCreado {
+    /* display: none; */
+    width: 721px;
+    height: 391px;
+    margin-left: 20%;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .guifoGrabado {
+    margin-left: 27px;
+    margin-top: 29px;
+    width: 365px;
+    height: 191px;
+    /* opacity: 0.3; */
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.dark .guifosM {
+    display: flex;
+}
+
+.dark .guifoSM {
+    margin-top: 45px;
+    margin-left: 30px;
+}
+
+.dark .guifoComp {
+    margin-top: 10px;
+    width: 256px;
+    height: 36px;
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+.dark .listoBtn {
+    padding: 6.5px 45px;
+    top: 90px;
+    left: 540px;
+    text-decoration: none;
 }

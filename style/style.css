@@ -133,6 +133,7 @@ body {
     padding-left: 10px;
 }
 
+
 .boton {
     display: flex;
     font-family: 'Chakra Petch', sans-serif;
@@ -156,11 +157,32 @@ body {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url(../images/lupa_inactive.svg);
+    background: url(../images/lupa_inactive.svg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     margin: 1px;
+}
+
+.button-imgActive {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/lupa.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1px;
+}
+
+.buscar:active .boton {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.buscarEj {
+    display: none;
 }
 
 .rectanguloS {
@@ -205,22 +227,58 @@ body {
     background-image: url(../images/gifOF_logo_dark.png);
 }
 
-.gifs {
+.gifsD {
     display: inline-block;
-    margin: 20px 20px 20px 0px;
+    position: relative;
+    margin: 20px 20px 0px 0px;
+    width: 264px;
+    height: 264px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.gifs {
+    /* display: inline-block;
+    position: relative; */
     width: 263px;
     height: 263px;
+    /* margin: 20px 25px 0px 0px; */
+    /* background: #E6E6E6; */
+}
+
+.gifs:hover {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    width: 260px;
+    height: 260px;
+} 
+
+.gifsSugD {
+    display: inline-block;
+    width: 267px;
+    height: 293px;
+    margin: 20px 15px 0px 0px;
     background: #E6E6E6;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .gifsSug {
     display: inline-block;
-    margin: 20px 20px 20px 0px;
+    position: relative;
+    top: 4px;
+    left: 2px;
+    /* margin: 20px 25px 0px 0px; */
     width: 263px;
     height: 263px;
     background: #E6E6E6;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.close {
+    position: absolute;
+    left: 243px;
+    top: 4px;
 }
 
 .gif {
@@ -228,6 +286,198 @@ body {
     height: 100%;
 }
 
-.sugerenciasO {
+.ocultar {
     display: none;
+}
+
+.program {
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 32px;
+    height: 32px;
+    /* flex-direction: column; */
+    /* width: 30%;
+    margin: 20px; */
+    /* display: flex; */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.crearM {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.crearSM {
+    /* flex-direction: column;
+    display: flex; */
+    margin-top: 15px;
+    margin-left: 16px;
+    /* left: 100px; */
+}
+
+.crearSM p {
+    margin: 10px;
+}
+
+.tituloCG {
+    font-size: 20px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.gifsD:hover .gifsT {
+    display: block;    
+}
+
+.camara {
+    position: relative;
+    margin: 10px;
+    width: 840px;
+    height: 450px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.closeC {
+    position: absolute;
+    left: 830px;
+    top: 4px;
+}
+
+.timer {
+    display: inline-block;
+    padding-top:6px;
+    padding-left:30px;
+    width: 124px;
+    height: 36px;
+    position: relative;
+    top: 2px;
+    left: 10px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.botonRecording {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    top: 4.5px;
+    left: 540px;
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    padding-top:5px;
+}
+
+.botonListo {
+    width: 144px;
+    height: 36px;
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    position: relative;
+    /* bottom: 10px; */
+    left: 535px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+.globe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 139px;
+}
+
+.subiendoP {
+    font-weight: bold;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 8px;
+}
+
+.progress {
+    width: 324px;
+    height: 24px;
+    margin-top: 41px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #B4B4B4;
+    box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+
+}
+
+.tiempoP {
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgba(17,0,56,0.64);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+video {
+    object-fit: cover;
+    margin-left: 2.5px;
+    /* margin-top: 2px; */
+    width: 835px;
+    height: 446px;
+}
+
+.botonesUpload2 {
+    display: none;
+}
+
+#btnU1 {
+    display: block;
+}
+
+#myGif {
+    display: none;
+    object-fit: cover;
+    margin-left: 2.5px;
+    margin-top: 2px;
+    width: 835px;
+    height: 446px;
+}
+
+.none {
+    text-decoration: none;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.contenedorgif {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, calc(22.5% - 12px));
+    grid-gap: 16px;
+}
+
+.mgif {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

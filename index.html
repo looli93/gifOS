@@ -17,20 +17,22 @@
     </div>
     <div class="whole">
         <nav class="navbar">
-            <a class="logo" href="/"></a>
+            <a class="logo" href="index.html"></a>
             <ul class="menu">
-                <li><a href="#episodios" class="botones">Crear Guifos</a></li>
+                <li>
+                    <a href="crearGuifos.html" class="botones">Crear Guifos</a>
+                </li>
                 <li class="botones botones-special">
                     <button onclick="myFunction()" class="botonTema">Elegir tema</button>
                     <ul id="myDropdown" class="menu-dropdown">
-                        <li><button class="day" onclick="changeThemeL()">Sailor Day</button></li>
-                        <li><button class="night" onclick="changeThemeD()">Sailor Night</button></li>
+                        <li><button class="day" onclick="changeThemeL()"><span class="underline">S</span>ailor Day</button></li>
+                        <li><button class="night" onclick="changeThemeD()"><span class="underline">S</span>ailor Night</button></li>
                     </ul>
                 </li>
                 <li>
-                    <button onclick="myFunction()" class="botonTema"><div class="dropdown"></div></button>
+                    <button onclick="myFunction()" class="botonTema"><span class="dropdown"></span></button>
                 </li>
-                <li><a href="#entrevistas" class="special-li"><u>M</u>is Guifos</a></li>
+                <li id="misGifos"><a href="misGuifos.html" class="special-li"><u>M</u>is Guifos</a></li>
             </ul>
         </nav>
         <div class="buscarS">
@@ -38,49 +40,150 @@
                 <p>Buscar</p>
             </div>
             <div>
-                <input type="text" class="buscar" id="search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras...">
+                <input type="text" class="buscar" id="search" autocomplete="off" placeholder="Busca gifs, hashtags, temas, busca lo que quieras...">
                 <button class="boton" onclick="boton()">
                     <span class="button-img"></span>Buscar
                 </button>
             </div>
         </div>
+        <div class="buscarSClick">
+            <button class="buscarSClickTema" onclick="verMas1B()">Perros</button>
+            <button class="buscarSClickTema" onclick="verMas2B()">Sailor Moon</button>
+            <button class="buscarSClickTema" onclick="verMas3B()">BTS</button>
+        </div>
+        <div class="buscarEj">
+            <button class="ejemplos" onclick="verMas3B()">#BTS</button>
+            <button class="ejemplos" onclick="verMas4B()">#gatos</button>
+            <button class="ejemplos" onclick="verMas1B()">#perros</button>
+        </div>
         <div class="sugerencias">
             <div class="rectanguloS">
                 <p>Hoy te sugerimos:</p>
             </div>
-            <img class="gifsSug" id="gif1"></img>
-            <img class="gifsSug" id="gif2"></img>
-            <img class="gifsSug" id="gif3"></img>
-            <img class="gifsSug" id="gif4"></img>
+            <div class="gifsSugD">
+                <div class="titulo">#Dogs<img src="images/close.svg" alt="close" class="close"></div>
+                <img class="gifsSug" id="gif1" alt="gif">
+                <button class="vermas" onclick="verMas1B()">Ver más...</button>
+            </div>
+            <div class="gifsSugD">
+                <div class="titulo">#SailorMoon<img src="images/close.svg" alt="close" class="close"></div>
+                <img class="gifsSug" id="gif2" alt="gif">
+                <button class="vermas" onclick="verMas2B()">Ver más...</button>
+            </div>
+            <div class="gifsSugD">
+                <div class="titulo">#BTS<img src="images/close.svg" alt="close" class="close"></div>
+                <img class="gifsSug" id="gif3" alt="gif">
+                <button class="vermas" onclick="verMas3B()">Ver más...</button>
+            </div>
+            <div class="gifsSugD">
+                <div class="titulo">#Cats<img src="images/close.svg" alt="close" class="close"></div>
+                <img class="gifsSug" id="gif4" alt="gif">
+                <button class="vermas" onclick="verMas4B()">Ver más...</button>
+            </div>
         </div>
         <div class="rectanguloS">
             <p id="resultados">Tendencias:</p>
         </div>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
-        <img class="gifs"></img>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
+        <div class="gifsD">
+            <img class="gifs" alt="gif">
+            <div class="gifsT"></div>
+        </div>
     </div>
 <script src="js.js"></script>
 </body>
